@@ -23,9 +23,12 @@ export class DialogComponent implements OnInit {
       price: ['', Validators.required],
       date: ['', Validators.required]
     });
+
   }
 
   onSubmit() {
-    console.log(this.productForm.value);
+    if (this.productForm.valid) {
+      console.log('Form is valid');
+    }
   }
 }
