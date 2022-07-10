@@ -1,19 +1,49 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "productName": "sada",
+      "comment": "asd",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 2,
+      "date": "2022-07-05T19:00:00.000Z",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "productName": "sada",
+      "comment": "asd",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 2,
+      "date": "2022-07-05T19:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "asd",
+      "comment": "1asdasdasdddddddddddddddddddddddddddddddddddddddddddddddd",
+      "category": "Vegetables",
+      "freshness": "Used",
+      "price": 1,
+      "date": "2022-07-17T19:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Cucumber",
+      "comment": "Nice.\n",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 1222,
+      "date": "2022-07-16T19:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Apple",
+      "comment": "asd",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 2111,
+      "date": "2022-07-16T19:00:00.000Z",
+      "id": 5
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
