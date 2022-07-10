@@ -3,7 +3,7 @@ export interface IProduct {
   comment: string;
   category: string;
   freshness: string;
-  price: number,
+  price: number;
   date: string;
-  id: number
+  id: number;
 }

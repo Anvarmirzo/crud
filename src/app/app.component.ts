@@ -23,6 +23,16 @@ export class AppComponent implements OnInit {
   openDialog() {
     this.dialog.open(DialogComponent, {
       width: '30%',
+    }).afterClosed().subscribe({
+      next: (productInModal: IProduct) => {
+        if (productInModal) {
+          if (this.products.some(item => item.id === productInModal.id)) {
+            this.products = this.products.map(item => item.id === productInModal.id ? productInModal : item)
+          } else {
+            this.products = [...this.products, productInModal];
+          }
+        }
+      }
     });
   }
 
