@@ -1,58 +1,22 @@
 {
   "products": [
     {
-      "productName": "sada",
+      "productName": "Potatoes",
       "comment": "asd",
-      "category": "Fruits",
+      "category": "Vegetables",
       "freshness": "Brand New",
-      "price": 2,
-      "date": "2022-07-05T19:00:00.000Z",
+      "price": 123,
+      "date": "2022-07-16T19:00:00.000Z",
       "id": 1
     },
     {
-      "productName": "sada",
+      "productName": "Apples",
       "comment": "asd",
       "category": "Fruits",
       "freshness": "Brand New",
-      "price": 2,
-      "date": "2022-07-05T19:00:00.000Z",
+      "price": 500,
+      "date": "2022-07-18T19:00:00.000Z",
       "id": 2
-    },
-    {
-      "productName": "asd",
-      "comment": "1asdasdasdddddddddddddddddddddddddddddddddddddddddddddddd",
-      "category": "Vegetables",
-      "freshness": "Used",
-      "price": 1,
-      "date": "2022-07-17T19:00:00.000Z",
-      "id": 3
-    },
-    {
-      "productName": "Cucumber",
-      "comment": "Nice.\n",
-      "category": "Vegetables",
-      "freshness": "Brand New",
-      "price": 1222,
-      "date": "2022-07-16T19:00:00.000Z",
-      "id": 4
-    },
-    {
-      "productName": "Apple",
-      "comment": "asd",
-      "category": "Fruits",
-      "freshness": "Brand New",
-      "price": 2111,
-      "date": "2022-07-16T19:00:00.000Z",
-      "id": 5
-    },
-    {
-      "productName": "Potato",
-      "comment": "None.",
-      "category": "Vegetables",
-      "freshness": "Like New",
-      "price": 3000,
-      "date": "2022-07-16T19:00:00.000Z",
-      "id": 6
     }
   ]
 }
