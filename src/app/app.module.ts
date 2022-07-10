@@ -9,12 +9,14 @@ import {DialogComponent} from './components/dialog/dialog.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { MessageArchivedComponentComponent } from './components/message-archived-component/message-archived-component.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
-    MessageArchivedComponentComponent
+    MessageArchivedComponentComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

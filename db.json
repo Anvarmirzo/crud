@@ -44,6 +44,15 @@
       "price": 2111,
       "date": "2022-07-16T19:00:00.000Z",
       "id": 5
+    },
+    {
+      "productName": "Potato",
+      "comment": "None.",
+      "category": "Vegetables",
+      "freshness": "Like New",
+      "price": 3000,
+      "date": "2022-07-16T19:00:00.000Z",
+      "id": 6
     }
   ]
 }
