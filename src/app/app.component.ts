@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {DialogComponent} from './components/dialog/dialog.component';
 import {ApiService} from './service/api.service';
+import {IProduct} from './models/product';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,8 @@ import {ApiService} from './service/api.service';
 })
 
 export class AppComponent implements OnInit {
+  products: IProduct[] = [];
+
   constructor(private dialog: MatDialog, private apiService: ApiService) {
   }
 
@@ -26,7 +29,7 @@ export class AppComponent implements OnInit {
   getAllProducts() {
     this.apiService.getProducts().subscribe({
       next: (data) => {
-        console.log(data);
+        this.products = data;
       },
       error: (err) => {
         console.log(err)
