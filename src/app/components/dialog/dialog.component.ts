@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {ApiService} from "../../service/api.service";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {MatDialogRef} from '@angular/material/dialog';
+import {ApiService} from '../../service/api.service';
 
 @Component({
   selector: 'app-dialog',
@@ -11,7 +12,7 @@ export class DialogComponent implements OnInit {
   freshnessList = ['Brand New', 'Like New', 'Used', 'Very Used'];
   productForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private apiService: ApiService) {
+  constructor(private formBuilder: FormBuilder, private apiService: ApiService, private dialogRef: MatDialogRef<DialogComponent>) {
   }
 
   ngOnInit() {
@@ -28,10 +29,14 @@ export class DialogComponent implements OnInit {
 
   onSubmit() {
     if (this.productForm.valid) {
-      console.log('Form is valid');
       this.apiService.postProduct(this.productForm.value).subscribe({
         next: (data) => {
-          console.log(data);
+          this.dialogRef.close();
+          this.productForm.reset();
+          alert('Product added successfully')
+        },
+        error: (err) => {
+          console.log(err)
         }
       })
     }

@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient} from '@angular/common/http';
+import {IProduct} from '../models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -9,12 +10,12 @@ export class ApiService {
   constructor(private http: HttpClient) {
   }
 
-  postProduct(product: any) {
-    return this.http.post('http://localhost:3000/products', product);
+  postProduct(product: IProduct) {
+    return this.http.post<IProduct>('http://localhost:3000/products', product);
   }
 
-  getProduct() {
-    return this.http.get('http://localhost:3000/products');
+  getProducts() {
+    return this.http.get<IProduct[]>('http://localhost:3000/products');
   }
 }
 
